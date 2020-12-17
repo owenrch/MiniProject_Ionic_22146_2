@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Profile </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row *ngIf="photo" class="ion-justify-content-center">
+    <img [src]="photo" />
+  </ion-row>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        Hello, {{namaDepan}} {{namaBelakang}}
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-button (click)="logout()" expand="block" shape="round">
+        Log Out
+      </ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center"> Owen Riady Chandra </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center"> 00000022146 </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    Kesan Pesan Singkat : Kelas terasa berbeda saat online karena sangat sepi :')
+  </ion-grid>
+</ion-content>
